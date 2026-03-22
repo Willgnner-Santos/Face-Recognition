@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  face_api:
+    build: .
+    container_name: face_recognition_api
+    network_mode: "host"
+    depends_on:
+      - qdrant
+    environment:
+      - QDRANT_HOST=127.0.0.1
+    restart: always
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_db
+    network_mode: "host"
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+    restart: always

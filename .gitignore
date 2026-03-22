@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+qdrant_storage/
+*.log
+
+# Dados sensíveis / pesados
+images/DATASET_WEBCAM/
+images/FOTOS JPG/
+EOF
