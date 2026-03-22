@@ -15,7 +15,5 @@ env/
 qdrant_storage/
 *.log
 
-# Dados sensíveis / pesados
 images/DATASET_WEBCAM/
 images/FOTOS JPG/
-EOF
